@@ -1,0 +1,21 @@
+---
+# defaults file for tamay.firewalld
+
+firewalld_service: []
+# Example:
+#firewalld_service:
+#  - service: http
+#    state: enabled
+#    zone: public
+#  - service: http
+#    state: enabled
+#    zone: dmz
+#  - service: https
+#    state: disabled
+
+firewalld_port: []
+# Example:
+#firewalld_port:
+#  - port: 8888/tcp
+#    state: enabled
+#    zone: public

@@ -1,0 +1,18 @@
+---
+
+- hosts: all
+  remote_user: vagrant
+  become: yes
+
+  vars:
+    firewalld_service:
+      - service: http
+      - service: http
+        zone: dmz
+      - service: https
+        state: disabled
+    firewalld_port:
+      - port: 8888/tcp
+
+  roles:
+  - ../../tamay.firewalld
